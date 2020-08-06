@@ -235,27 +235,27 @@
 
 
         //}
-        document.querySelector("#score").innerHTML="Player: "+u+ " - "+"Computer: "+ c
+        document.querySelector("#score").innerHTML="Player: "+u+"Computer: "+ c
 
         if(u==5 && c<5){
           countter++;
           u=0;
           c=0;
           document.querySelector('#s').innerHTML="ROUND-"+countter;
-          document.querySelector("#score").innerHTML="Player: 0 - Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
         }
 
         else if(u<5 && c==5){
           countter++;
           u=0;c=0;
-          document.querySelector("#score").innerHTML="Player: 0 - Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
           document.querySelector('#s').innerHTML="ROUND-"+countter;
         }
         else if(u==5 && c==5){
 
           countter++;
           u=0;c=0;
-          document.querySelector("#score").innerHTML="Player: 0 - Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
 
           document.querySelector('#s').innerHTML="ROUND-"+countter;
 
@@ -270,7 +270,7 @@
         u=c=0;
         document.querySelector('#s').innerHTML="ROUND-"+1;
 
-        document.querySelector('#score').innerHTML="Player:0 - Computer:0";
+        document.querySelector('#score').innerHTML="Player:0 "\n" Computer:0";
       }
 
 </script>
