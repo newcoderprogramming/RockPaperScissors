@@ -6,7 +6,7 @@
 
   #threeButtons{
 
-    margin-left:35%;
+    margin-left:39%;
     padding-left: 5%;
     padding-top: 10%;
     padding-bottom: 5%;
@@ -63,7 +63,7 @@
   #result{
     text-align:center;
     color:#660000;
-    font-family: cursive;
+    font-family:monospace;
     /* margin-left: 9%; */
     margin-bottom:4%;
 
@@ -92,7 +92,7 @@
   }
   .select>a>button{
     border-radius: 15%;
-    font-family: cursive;
+    font-family:monospace;
     width:110%;
     background-color: Transparent;
 
@@ -120,7 +120,7 @@
 
   .round{
     margin-left: 80%;
-    margin-top: -8%;
+    margin-top: -5%;
   }
 }
 
@@ -197,7 +197,6 @@
     text-align:center;
     color:#660000;
     font-family:monospace;
-    /* margin-left: 9%; */
     margin-bottom:4%;
 
   }
@@ -248,7 +247,7 @@
     border-radius: 15%;
     background-color: Transparent;
     border-radius: 15%;
-    font-family: cursive;
+    font-family:monospace;
     height: 2000%;
     background-color: Transparent;
     padding: 65%;
@@ -264,6 +263,7 @@
 
   #s{
     font-size: 150%;
+
   }
 
   #score{
