@@ -1,0 +1,122 @@
+body{
+  background-color: #006666;
+  font-family: cursive;
+}
+
+#threeButtons{
+
+  margin-left:35%;
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  /* border: 2px solid black; */
+  margin-bottom: 10%;
+  width:30%;
+}
+
+
+#title{
+  margin-top: -1%;
+  margin-left: -2.5%;
+  margin-right: -2.5%;
+}
+
+#threeButtons>button{
+  border-radius: 90%;
+  width:15%;
+  background-color: Transparent;
+  border: none;
+
+}
+
+.b{
+  border-radius: 40%;
+  font-family: cursive;
+
+}
+
+
+
+button{
+
+  /* width:30%; */
+  /* height:50%; */
+  font-size: 200%;
+  radius:70%;
+}
+h6{
+  font-size:20px;
+  color:#1f1f2e;
+}
+button:hover{
+    background-color: #e6e6e6;
+    cursor:pointer;
+}
+
+#title{
+  background-color: black;
+  color:white;
+  padding: 2%;
+}
+
+#result{
+  text-align:center;
+  color:#660000;
+  font-family: cursive;
+  /* margin-left: 9%; */
+  margin-bottom:4%;
+
+}
+
+#restart{
+  width:7%;
+  font-family: cursive;
+  font-size: 100%;
+  margin-left: 89%;
+  margin-top: 2%;
+  border-radius: 40%;
+}
+
+.select{
+  /* border:2px solid black; */
+  font-family: cursive;
+  margin-left: 40%;
+  margin-top: 10%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width:10%;
+
+}
+.select>a>button{
+  border-radius: 15%;
+  font-family: cursive;
+  width:110%;
+  background-color: Transparent;
+
+}
+
+.playerselection{
+  margin-left: 40%;
+  margin-top: 10%;
+  padding-left: 2%;
+  width:10%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /* border:2px solid black; */
+
+}
+.playerselection>a>button{
+  font-family: cursive;
+  border-radius: 15%;
+  width:110%;
+  background-color: Transparent;
+
+
+}
+
+.round{
+  margin-left: 80%;
+  margin-top: -8%;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>RockPaper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <h2 id="title" style="text-align:center;"> ROCK!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPAPER!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSCISSORS! </h2>
+
+
+
+    <h1 id="result">&#128526; Player V/S Computer &#129302;</h1>
+    <div class="round">
+      <h1 id='s' >ROUND-1</h1>
+      <h2 id="score">0 - 0</h2>
+    </div>
+
+    <div id="threeButtons">
+      <button  type="button" name="button" onclick="userChoice('rock')"     class="b">&#9994;</button>
+      <button  type="button" name="button" onclick="userChoice('paper')"    class="b">&#9995;</button>
+      <button  type="button" name="button" onclick="userChoice('scissors')" class="b">&#9996;&#65039;</button>
+    </div>
+
+    <button type="button" name="button" id="restart" onclick="restart()">RESTART</button>
+
+    <script>
+
+            var countter=1;
+            var c=u=0;
+          function userChoice(userInput){
+            this.userInput=userInput;
+            if(userInput ==='rock' || userInput==='paper' || userInput=== 'scissors'){
+            var userchoice=userInput;
+            }
+            computerChoice(userInput);
+
+          }
+
+
+
+          function computerChoice(userInput){
+            this.userInput=userInput;
+
+            var computerInput=Math.floor(Math.random() * 3);
+
+            if(computerInput==0){
+              computerInput='rock';
+            }
+            else if(computerInput==1){
+              computerInput='paper';
+            }
+            else if(computerInput==2){
+              computerInput='scissors';
+            }
+
+
+            determineWinner(computerInput,userInput);
+
+          }
+
+          function determineWinner(i,j){
+
+            if(i==='rock' && j==='scissors'){
+              alert(`Computer's choice:${i}`)
+              document.querySelector('#result').innerHTML="Computer Wins !&#129302; "
+              c++;
+            }
+
+            else if(i==='rock' && j==='paper'){
+              alert(`Computer's choice:${i}`)
+              document.querySelector('#result').innerHTML="Player Wins! &#128526;"
+              u++;
+            }
+
+            else if(i==='paper' && j==='scissors'){
+              alert(`Computer's choice:${i}`)
+
+              document.querySelector('#result').innerHTML="Player Wins! &#128526;"
+              u++;
+            }
+
+            else if(i==='paper' && j==='rock'){
+              alert(`Computer's choice:${i}`)
+
+              document.querySelector('#result').innerHTML="Computer Wins! &#129302; "
+              c++;
+            }
+
+            else if(i==='scissors' && j==='paper'){
+              alert(`Computer's choice:${i}`)
+
+              document.querySelector('#result').innerHTML="Computer Wins! &#129302;"
+              c++;
+            }
+
+            else if(i==='scissors' && j==='rock'){
+              alert(`Computer's choice:${i}`)
+
+              document.querySelector('#result').innerHTML="Player Wins! &#128526;"
+              u++;
+            }
+
+            else{
+              alert(`Computer's choice:${i}`)
+
+              document.querySelector('#result').innerHTML="It\'s A Tie &#129309;"
+              c++;
+              u++;
+            }
+
+            document.querySelector("#score").innerHTML=u+ " - "+ c;
+
+            if(u==5 && c<5){
+              countter++;
+              u=0;
+              c=0;
+              document.querySelector('#s').innerHTML="ROUND-"+countter;
+              document.querySelector("#score").innerHTML="0 - 0";
+            }
+
+            else if(u<5 && c==5){
+              countter++;
+              u=0;
+              c=0;
+              document.querySelector("#score").innerHTML="0 - 0"
+              document.querySelector('#s').innerHTML="ROUND-"+countter;
+            }
+
+            else if(u==5 && c==5){
+              countter++;
+              u=0;
+              c=0;
+              document.querySelector("#score").innerHTML="0 - 0"
+              document.querySelector('#s').innerHTML="ROUND-"+countter;
+
+            }
+          }
+
+
+          function restart(){
+            document.querySelector('#result').innerHTML="&#128526; Player V/S Computer &#129302;";
+            u=c=0;
+            document.querySelector('#score').innerHTML="0 - 0";
+          }
+
+    </script>
+
+
+  </body>
+</html>
