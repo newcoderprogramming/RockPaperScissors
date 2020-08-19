@@ -8,7 +8,6 @@
   </head>
 
   <body>
-    <h2 id="title" style="text-align:center;"> ROCK!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPAPER!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSCISSORS! </h2>
 
 
 
@@ -35,7 +34,6 @@
         var countter=1;
         var c=u=0;
       function userChoice(userInput){
-        this.userInput=userInput;
         if(userInput ==='rock' || userInput==='paper' || userInput=== 'scissors' || userInput==='lizard' || userInput==='spock'){
         var userchoice=userInput;
         }
@@ -46,29 +44,30 @@
 
 
       function computerChoice(userInput){
+
         this.userInput=userInput;
         var computerInput=Math.floor(Math.random() * 5);
-        var computersChoice
+
 
         if(computerInput==0){
-          computersChoice='rock';
+          computerInput='rock';
         }
         else if(computerInput==1){
-          computersChoice='paper';
+          computerInput='paper';
         }
         else if(computerInput==2){
-          computersChoice='scissors';
+          computerInput='scissors';
         }
         else if(computerInput==3){
-          computersChoice='lizard'
+          computerInput='lizard'
         }
         else if(computerInput==4){
-          computersChoice='spock'
+          computerInput='spock'
         }
 
 
 
-        determineWinner(computersChoice,userInput);
+        determineWinner(computerInput,userInput);
 
       }
 
@@ -242,20 +241,20 @@
           u=0;
           c=0;
           document.querySelector('#s').innerHTML="ROUND-"+countter;
-          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 \n Computer: 0"
         }
-
+        //
         else if(u<5 && c==5){
           countter++;
           u=0;c=0;
-          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 \n Computer: 0"
           document.querySelector('#s').innerHTML="ROUND-"+countter;
         }
         else if(u==5 && c==5){
 
           countter++;
           u=0;c=0;
-          document.querySelector("#score").innerHTML="Player: 0 "\n" Computer: 0"
+          document.querySelector("#score").innerHTML="Player: 0 \n Computer: 0"
 
           document.querySelector('#s').innerHTML="ROUND-"+countter;
 
@@ -270,7 +269,7 @@
         u=c=0;
         document.querySelector('#s').innerHTML="ROUND-"+1;
 
-        document.querySelector('#score').innerHTML="Player:0 "\n" Computer:0";
+        document.querySelector('#score').innerHTML="Player:0 \n Computer:0";
       }
 
 </script>
